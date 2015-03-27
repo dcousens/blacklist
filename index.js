@@ -1,11 +1,18 @@
-module.exports = function blacklist(object, filter) {
+module.exports = function blacklist(src, filter) {
   var copy = {}
 
-  for (var key in object) {
+  if (typeof filter === 'string') {
+    filter = {}
+    for (var i = 1; i < arguments.length; i++) {
+      filter[arguments[i]] = true
+    }
+  }
+
+  for (var key in src) {
     // blacklist?
     if (filter[key]) continue
 
-    copy[key] = object[key]
+    copy[key] = src[key]
   }
 
   return copy
