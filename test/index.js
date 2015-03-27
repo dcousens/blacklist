@@ -1,8 +1,8 @@
 var assert = require('assert')
 var blacklist = require('../')
 
-describe('blacklist', function() {
-  it('works as expected', function() {
+describe('blacklist', function () {
+  it('works as expected', function () {
     var someInput = { a: 1, b: 2, c: 3 }
     var result = blacklist(someInput, {
       a: true,   // a will not be in the result
