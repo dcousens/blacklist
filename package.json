@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "standard": "standard",
+    "test": "mocha --reporter list -t 20000 test/index.js"
   },
   "keywords": [
     "blacklist",
@@ -12,5 +13,9 @@
     "object"
   ],
   "author": "Daniel Cousens",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "standard": "^3.3.0"
+  }
 }

@@ -3,7 +3,7 @@ module.exports = function blacklist(object, filter) {
 
   for (var key in object) {
     // blacklist?
-    if (!filter[key]) continue
+    if (filter[key]) continue
 
     copy[key] = object[key]
   }
