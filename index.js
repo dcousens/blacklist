@@ -6,7 +6,7 @@ module.exports = function blacklist (src) {
     for (var i = 1; i < arguments.length; i++) {
       filter[arguments[i]] = true
     }
-  } console.log(filter, arguments)
+  }
 
   for (var key in src) {
     // blacklist?
