@@ -3,6 +3,14 @@
   "version": "1.1.1",
   "description": "Returns a shallow copy of an object without blacklisted properties",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcousens/blacklist.git"
+  },
+  "homepage": "https://github.com/dcousens/blacklist",
+  "bugs": {
+    "url": "https://github.com/dcousens/blacklist/issues"
+  },
   "scripts": {
     "standard": "standard",
     "test": "mocha --reporter list -t 20000 test/index.js"
