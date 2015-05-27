@@ -7,13 +7,14 @@ describe('blacklist', function () {
   it('blacklists properties in a filter object', function () {
     var someInput = { a: 1, b: 2, c: 3 }
     var result = blacklist(someInput, {
-      a: true,   // a will not be in the result
-      b: false,  // b will be in the result
-      c: 1 > 2   // false, therefore c will be in the result
+      a: true,
+      b: false,
+      c: false
     })
 
     assert.deepEqual(result, { b: 2, c: 3 })
   })
+  
   it('accepts n string arguments', function () {
     var someInput = { a: 1, b: 2, c: 3 }
     var result = blacklist(someInput, 'b', 'c')
