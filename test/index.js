@@ -4,7 +4,7 @@ var assert = require('assert')
 var blacklist = require('../')
 
 describe('blacklist', function () {
-  it('blacklists properties in a filter object', function () {
+  it('omits properties from a filter object', function () {
     var someInput = { a: 1, b: 2, c: 3 }
     var result = blacklist(someInput, {
       a: true,
@@ -15,7 +15,7 @@ describe('blacklist', function () {
     assert.deepEqual(result, { b: 2, c: 3 })
   })
   
-  it('accepts n string arguments', function () {
+  it('omits properties from an arguments list', function () {
     var someInput = { a: 1, b: 2, c: 3 }
     var result = blacklist(someInput, 'b', 'c')
 
