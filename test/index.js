@@ -14,7 +14,7 @@ describe('blacklist', function () {
 
     assert.deepEqual(result, { b: 2, c: 3 })
   })
-  
+
   it('omits properties from an arguments list', function () {
     var someInput = { a: 1, b: 2, c: 3 }
     var result = blacklist(someInput, 'b', 'c')
