@@ -1,5 +1,6 @@
 module.exports = function blacklist (src) {
-  var copy = {}, filter = arguments[1]
+  var copy = {}
+  var filter = arguments[1]
 
   if (typeof filter === 'string') {
     filter = {}
