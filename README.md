@@ -7,6 +7,15 @@ This module shallow copies an object, ignoring keys depending on the filter obje
 
 Filters can be provided as an object (truthy keys are blacklisted) or string arguments.
 
+### ES next alternative
+
+If you can use 
+
+``` javascript
+var { a, ... bc } = { a: 1, b: 2, c: 3 }
+```
+
+
 ### Example
 ``` javascript
 var someInput = { a: 1, b: 2, c: 3 }
