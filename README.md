@@ -9,7 +9,7 @@ Filters can be provided as an object (truthy keys are blacklisted) or string arg
 
 ### ES next alternative
 
-If you can use 
+If you can, use 
 
 ``` javascript
 var { a, ... bc } = { a: 1, b: 2, c: 3 }
