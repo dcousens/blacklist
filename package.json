@@ -14,6 +14,7 @@
   "scripts": {
     "prebuild": "mkdir -p dist",
     "build": "umd blacklist index.js dist/blacklist.js",
+    "postbuild": "uglifyjs dist/blacklist.js > dist/blacklist.min.js",
     "prepublish": "npm run build",
     "standard": "standard",
     "test": "mocha --reporter list -t 20000 test/index.js"
@@ -29,6 +30,7 @@
   "devDependencies": {
     "mocha": "^2.2.1",
     "standard": "^3.3.0",
+    "uglify-js": "^2.6.1",
     "umd": "^3.0.1"
   }
 }
