@@ -12,6 +12,9 @@
     "url": "https://github.com/dcousens/blacklist/issues"
   },
   "scripts": {
+    "prebuild": "mkdir -p dist",
+    "build": "umd blacklist index.js dist/blacklist.js",
+    "prepublish": "npm run build",
     "standard": "standard",
     "test": "mocha --reporter list -t 20000 test/index.js"
   },
@@ -25,6 +28,7 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^2.2.1",
-    "standard": "^3.3.0"
+    "standard": "^3.3.0",
+    "umd": "^3.0.1"
   }
 }
