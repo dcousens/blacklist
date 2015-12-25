@@ -13,7 +13,7 @@
   },
   "scripts": {
     "prebuild": "mkdir -p dist",
-    "build": "umd blacklist index.js dist/blacklist.js",
+    "build": "umd --commonJS blacklist index.js dist/blacklist.js",
     "postbuild": "uglifyjs dist/blacklist.js > dist/blacklist.min.js",
     "prepublish": "npm run build",
     "standard": "standard",
