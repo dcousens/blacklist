@@ -17,7 +17,8 @@
     "postbuild": "uglifyjs dist/blacklist.js > dist/blacklist.min.js",
     "prepublish": "npm run build",
     "standard": "standard",
-    "test": "faucet"
+    "unit": "faucet",
+    "test": "npm run standard && npm run unit"
   },
   "keywords": [
     "blacklist",
