@@ -17,7 +17,7 @@
     "postbuild": "uglifyjs dist/blacklist.js > dist/blacklist.min.js",
     "prepublish": "npm run build",
     "standard": "standard",
-    "test": "mocha --reporter list -t 20000 test/index.js"
+    "test": "faucet"
   },
   "keywords": [
     "blacklist",
@@ -28,8 +28,9 @@
   "author": "Daniel Cousens",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.2.1",
-    "standard": "^3.3.0",
+    "faucet": "0.0.1",
+    "standard": "^7.1.2",
+    "tape": "^4.6.0",
     "uglify-js": "^2.6.1",
     "umd": "^3.0.1"
   }
