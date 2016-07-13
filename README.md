@@ -1,6 +1,6 @@
 # blacklist
 
-[![Build Status](https://travis-ci.org/dcousens/blacklist.png?branch=master)](https://travis-ci.org/dcousens/blacklist)
+[![Build Status](https://travis-ci.org/dcousens/blacklist.svg)](https://travis-ci.org/dcousens/blacklist)
 [![Version](http://img.shields.io/npm/v/blacklist.svg)](https://www.npmjs.org/package/blacklist)
 
 This module shallow copies an object, ignoring keys depending on the filter object passed to it.
