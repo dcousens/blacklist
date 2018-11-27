@@ -17,7 +17,7 @@
     "postbuild": "uglifyjs dist/blacklist.js > dist/blacklist.min.js",
     "prepublish": "npm run build",
     "standard": "standard",
-    "unit": "faucet",
+    "unit": "tape test/*.js",
     "test": "npm run standard && npm run unit"
   },
   "keywords": [
@@ -29,8 +29,7 @@
   "author": "Daniel Cousens",
   "license": "MIT",
   "devDependencies": {
-    "faucet": "0.0.1",
-    "standard": "^7.1.2",
+    "standard": "*",
     "tape": "^4.6.0",
     "uglify-js": "^2.6.1",
     "umd": "^3.0.1"
