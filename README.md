@@ -39,3 +39,6 @@ blacklist(someInput, {
 })
 // => { b: 2, c: 3 }
 ```
+
+
+## LICENSE [MIT](LICENSE)
